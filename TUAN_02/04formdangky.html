@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký thông tin</title>
+    <style>
+        body{
+            background-color: rgb(252, 243, 246);
+            font-family: Arial, sans-serif;
+        }
+        .form-box {
+            background: #ffffff;
+            width: 500px;
+            margin: 60px auto;
+            padding: 20px;
+            border-radius: 12px;
+            justify-content: center;
+            
+        }
+        h1{
+            text-align: center;
+            color: rgb(212, 97, 114);
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 16px;
+            width: 100%;
+            padding: 10px;
+            background-color: #df7286;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;       
+        }
+        button:hover {
+            background-color: #970e25;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h1>ĐĂNG KÝ THÔNG TIN CÁ NHÂN</h1>
+        <form>
+            <label>Họ và tên:</label><br>
+            <input type="text" name="ten"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Số điện thoại:</label><br>
+            <input type="tel" name="sdt"><br><br>
+
+            <label>Giới tính:</label>
+            <select name="gender" required>
+                <option value="">-- Chọn --</option>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+            </select>
+
+            <button type="submit">Gửi</button>
+        </form>
+   </div> 
+</body>
+</html>
