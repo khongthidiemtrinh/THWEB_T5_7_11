@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát ý kiến</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            background: linear-gradient(to right, #fee0e0, #fce2eb);
+            margin: 0;
+            padding: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form{
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .form h1{
+            text-align: center;
+            color: #d81b60;
+            margin-bottom: 25px;
+        }
+
+        label{
+            font-weight: 600;
+            margin: auto;
+            display: block;
+            color: #333;
+        }
+
+        .options {
+            margin-bottom: 15px;
+        }
+
+        .options input {
+            accent-color: #d81b60;
+        }
+
+        textarea{
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 5px;
+            width: 500px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #8f0e46;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h1>KHẢO SÁT Ý KIẾN</h1>
+        <label>Bạn có hài lòng với dịch vụ?</label>
+        <div class="options">
+            <input type="radio" name="dichvu" value="co"> Có  
+            <input type="radio" name="dichvu" value="khong"> Không
+        </div>
+
+        <label>Bạn quan tâm đến:</label>
+        <div class="options">
+            <input type="checkbox"  > Sản phẩm mới  
+            <input type="checkbox"  > Ưu đãi
+            <input type="checkbox"  > Hỗ trợ khách hàng  
+        </div>
+
+        <label>Ý kiến khác:</label>
+        <textarea placeholder="Nhập ý kiến..."></textarea>
+        <button type="submit">Gửi phản hồi</button>
+
+
+    </form>
+</body>
+</html>

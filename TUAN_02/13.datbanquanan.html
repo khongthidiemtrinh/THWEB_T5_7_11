@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăjt bàn quán ăn</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            background: linear-gradient(to right, #fee0e0, #fce2eb);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .formfull{
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .formfull h1{
+            text-align: center;
+            color: #d81b60;
+            margin-bottom: 25px;
+        }
+
+        label{
+            font-weight: 600;
+            margin: auto;
+            display: block;
+            color: #333;
+        }
+
+        .form {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: inherit;
+        }
+
+        textarea.form{
+            border-radius: 8px;
+        
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #8f0e46;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="formfull">
+        <h1>ĐẶT BÀN QUÁN ĂN</h1>
+
+        <label for="date">Ngày đặt:</label>
+        <input type="date" class="form" required>
+
+        <label for="time">Giờ đặt:</label>
+        <input type="time" class="form" required>
+
+        <label for="people">Số người:</label>
+        <select name="people" id="people" class="form" required>
+            <option value="">--Chọn số người--</option>
+            <option value="1">1 người</option>
+            <option value="2">2 người</option>
+            <option value="3">3 người</option>
+            <option value="4">4 người</option>
+        </select>
+
+        <label for="none">Yêu cầu:</label>
+        <textarea name="yêu cầu" id="note" class="form" placeholder="Ví dụ: bàn ngoài trời, cạnh cửa sổ,..."></textarea>
+        <button type="submit">Đặt Bàn Ngay</button>
+    </form>
+    
+</body>
+</html>
