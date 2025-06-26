@@ -1,101 +1,44 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Khảo Sát Ý Kiến</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #fce3ec, #ffe8f0);
-      margin: 0;
-      padding: 50px 20px;
-      display: flex;
-      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-color: #f9eaf1;
     }
 
-    .survey-form {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      max-width: 480px;
-      width: 100%;
-    }
-
-    .survey-form h2 {
+    h1 {
       text-align: center;
-      color: #d81b60;
-      margin-bottom: 25px;
     }
 
-    label {
-      font-weight: 600;
-      margin: 12px 0 8px;
-      display: block;
-      color: #333;
+    ul {
+      width: 300px;
+      margin: 20px auto;
+      padding: 0;
+      list-style-type: none;
     }
 
-    .options {
-      margin-bottom: 15px;
-    }
-
-    .options input {
-      margin-right: 8px;
-      accent-color: #d81b60;
-    }
-
-    textarea {
-      width: 100%;
+    li {
+      background-color: #f6c3d8;
       padding: 10px;
-      margin-top: 5px;
+      margin-bottom: 10px;
       border-radius: 8px;
-      border: 1px solid #ccc;
-      resize: vertical;
-      font-size: 14px;
+      text-align: center;
     }
-
-    button {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      margin-top: 20px;
-      background-color: #d81b60;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background-color: #ad1457;
-    }
+    
   </style>
 </head>
 <body>
-
-  <form class="survey-form">
-    <h2>Khảo Sát Ý Kiến</h2>
-
-    <label>Bạn có hài lòng với dịch vụ?</label>
-    <div class="options">
-      <input type="radio" name="dichvu" value="co"> Có  
-      <input type="radio" name="dichvu" value="khong"> Không  
-    </div>
-
-    <label>Bạn quan tâm đến:</label>
-    <div class="options">
-      <input type="checkbox" name="q1"> Sản phẩm mới  
-      <input type="checkbox" name="q2"> Ưu đãi  
-      <input type="checkbox" name="q3"> Hỗ trợ khách hàng  
-    </div>
-
-    <label>Ý kiến khác:</label>
-    <textarea placeholder="Nhập ý kiến của bạn tại đây..."></textarea>
-
-    <button type="submit">Gửi phản hồi</button>
-  </form>
-
+  <h1>Danh sách môn học yêu thích</h1>
+  <ul>
+    <li>Toán</li>
+    <li>Tiếng Anh</li>
+    <li>Thiết kế Web</li>
+    <li>Logic học</li>
+  </ul>
+  
 </body>
 </html>
