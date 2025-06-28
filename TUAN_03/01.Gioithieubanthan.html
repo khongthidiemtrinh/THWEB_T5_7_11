@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <style>
+        body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fdf1ec;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: #e1778c;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        p{
+            font-style: italic;
+            margin: 5px 0;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 150px;
+            border-style: dotted;
+            border-width: 10px;
+            background-color : rgb(248, 152, 178);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            align-items: center;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 10px; 
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://bloganchoi.com/wp-content/uploads/2022/05/hinh-avatar-doi-dep-2022-5-696x696.jpg" alt=""/>
+        <div class="info">
+            <h1>Thông tin cá nhân</h1>
+            <p><strong>Name:</strong><span>Khổng Thị Diễm Trinh</span></p>
+            <p><strong>Ngày sinh:</strong><span>18/08/2005</span></p>
+            <p>Là sinh viên ngành TMDT và đang học Hệ thống và công nghệ web.</p>
+        </div>
+    </div>
+</body>
+</html>
