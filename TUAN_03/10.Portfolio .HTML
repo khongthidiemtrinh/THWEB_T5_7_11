@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Diễm Trinh</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f5;
+            padding: 20px;
+        }
+        .me {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .me img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px dotted #f8a1b2;
+            object-fit: cover;
+        }
+        .me h1 {
+            margin: 10px 0 5px;
+            color: #d85470;
+        }
+        .me p {
+            color: #555;
+            font-style: italic;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            background-color: #ffe6eb;
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 15px;
+        }
+        .project-content h2, .project-content h3 {
+            margin-top: 0;
+            color: #cc3366;
+        }
+        .project-content p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+  <div class="me">
+    <img src="https://bloganchoi.com/wp-content/uploads/2022/05/hinh-avatar-doi-dep-2022-5-696x696.jpg" alt="Ảnh đại diện">
+    <h1>Khổng Thị Diễm Trinh</h1>
+    <p>Sinh viên TMDT - Khoa Thương mại Du lịch</p>
+  </div>
+
+  <div class="portfolio">
+    <div class="project">
+      <img src="https://atpcare.vn/wp-content/uploads/2019/12/b%C3%A1n-%C4%91%E1%BB%93-handmade-1024x682.jpg" alt="Dự án 1">
+      <div class="project-content">
+        <h2>MiniShop - Website Bán Đồ Trang Sức Handmade</h2>
+        <p>MiniShop là một website bán hàng trực tuyến chuyên về đồ trang sức handmade như vòng tay, vòng cổ, nhẫn và phụ kiện thủ công. Website hướng đến giới trẻ yêu thích sản phẩm cá nhân hóa, độc đáo.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://titiphamcake.com/wp-content/uploads/2025/02/480439552_1027587112739324_5946542307181449739_n-768x1024.jpg" alt="Dự án 2">
+      <div class="project-content">
+        <h3>CakeNow - Website Đặt Bánh Sinh Nhật Online</h3>
+        <p>CakeNow là website chuyên nhận đặt bánh sinh nhật online tại địa phương. Người dùng có thể chọn mẫu bánh, cá nhân hóa lời chúc, chọn ngày giao và thanh toán trực tuyến hoặc khi nhận hàng.</p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
